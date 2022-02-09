@@ -1,21 +1,21 @@
-INFO  [2022-02-08 16:04:17] ===============Data preparation===============
-INFO  [2022-02-08 16:04:17] Reading variables: player, playerShort, birthday, height, weight, position, club, leagueCountry, goals, victories, defeats, yellowCards, games, redCards, rater1, rater2 from the soccer data set.
-INFO  [2022-02-08 16:04:17] <146028 rows>
-INFO  [2022-02-08 16:04:17] =======Checking for missing values======
-INFO  [2022-02-08 16:04:17] Variables: rater1, rater2, position, weight, height missing values for 21407, 21407, 17726, 2243, 263 rows respectively.
-INFO  [2022-02-08 16:04:17] =======Checking player records for missing information======
-INFO  [2022-02-08 16:04:17] Found 0 records with `rater1` info for players with missing records.
-INFO  [2022-02-08 16:04:17] Removed 21407 rows missing `rater1`.
-INFO  [2022-02-08 16:04:17] <124621 rows>
-INFO  [2022-02-08 16:04:17] Variables: position, weight, height missing values for 8461, 753, 46 rows respectively.
-INFO  [2022-02-08 16:04:17] Found 0 records with `position` info for players with missing records.
-INFO  [2022-02-08 16:04:17] Removed 8461 rows missing `position`.
-INFO  [2022-02-08 16:04:17] <116160 rows>
-INFO  [2022-02-08 16:04:17] Variables: weight, height missing values for 557, 45 rows respectively.
-INFO  [2022-02-08 16:04:17] Found 0 records with `weight` info for players with missing records.
-INFO  [2022-02-08 16:04:17] Removed 557 rows missing `weight`.
-INFO  [2022-02-08 16:04:17] <115603 rows>
-INFO  [2022-02-08 16:04:17] No rows with missing values.
-INFO  [2022-02-08 16:04:18] ===============Data preparation completed===============
+INFO  [2022-02-08 23:01:26] ===============Data preparation===============
+INFO  [2022-02-08 23:01:26] Reading variables: player, playerShort, birthday, height, weight, position, club, leagueCountry, refNum, goals, victories, defeats, yellowCards, games, redCards, rater1, rater2 from the soccer data set.
+INFO  [2022-02-08 23:01:26] <146028 rows>
+INFO  [2022-02-08 23:01:26] =======Checking for missing values======
+INFO  [2022-02-08 23:01:26] Variables: rater1, rater2, position, weight, height missing values for 21407, 21407, 17726, 2243, 263 rows respectively.
+INFO  [2022-02-08 23:01:26] =======Checking player records for missing information======
+INFO  [2022-02-08 23:01:26] Found 0 records with `rater1` info for players with missing records.
+INFO  [2022-02-08 23:01:26] Removed 21407 rows missing `rater1`.
+INFO  [2022-02-08 23:01:26] <124621 rows>
+INFO  [2022-02-08 23:01:26] Variables: position, weight, height missing values for 8461, 753, 46 rows respectively.
+INFO  [2022-02-08 23:01:26] Found 0 records with `position` info for players with missing records.
+INFO  [2022-02-08 23:01:26] Removed 8461 rows missing `position`.
+INFO  [2022-02-08 23:01:26] <116160 rows>
+INFO  [2022-02-08 23:01:26] Variables: weight, height missing values for 557, 45 rows respectively.
+INFO  [2022-02-08 23:01:26] Found 0 records with `weight` info for players with missing records.
+INFO  [2022-02-08 23:01:27] Removed 557 rows missing `weight`.
+INFO  [2022-02-08 23:01:27] <115603 rows>
+INFO  [2022-02-08 23:01:27] No rows with missing values.
+INFO  [2022-02-08 23:01:27] ===============Data preparation completed===============
     Original data set contained 146,028 rows. Removed 30,425 rows; 115,603 rows kept.
-INFO  [2022-02-08 16:04:18] =======Data saved to `data/soccer.csv`=======
+INFO  [2022-02-08 23:01:27] =======Data saved to `data/soccer.csv`=======

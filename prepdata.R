@@ -18,7 +18,7 @@ log_info <- function(msg, logger = my_logger) {
 }
 log_info("===============Data preparation===============")
 variables <- c('player', 'playerShort', 'birthday', 'height', 'weight',
-               'position', 'club', 'leagueCountry', 
+               'position', 'club', 'leagueCountry', 'refNum',
                'goals', 'victories', 'defeats', 'yellowCards', 
                'games', 'redCards', 'rater1', 'rater2')
 log_info(paste0("Reading variables: ", paste0(variables, collapse = ", "),
