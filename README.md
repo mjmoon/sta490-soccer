@@ -3,8 +3,7 @@
 This repository contains the data file prepared for
 _STA490: Statistical Consultation, Communication, and Collaboration_
 at the University of Toronto. The original data set was prepared by
-Silberzahn et al. (2018). We selected a subset of data variables and removed
-records with missing values. `prepdata.R` is the script and `soccer.log`
+Silberzahn et al. (2018). We selected a subset of data variables and records for the sake of demonstration in class. `prepdata.R` is the script and `soccer.log`
 is the log file containing the details of the data preparation steps.
 
 ## Reference

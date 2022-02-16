@@ -66,8 +66,8 @@ check_missing_player <- function(df, var) {
     
   }
   # else
-    # fill missing records using the records for the same players
-    # 0 found
+  # fill missing records using the records for the same players
+  # 0 found
   missing <- check_missing(df_new)
   return(list(missing, df_new))
 }
@@ -76,16 +76,16 @@ while(! is.null(missing)) {
   missing <- res[[1]]
   df1 <- res[[2]]
 }
-log_info("=======Randomly select 500 players and 1,000 referees======")
+log_info("=======Randomly select 1,000 players and 1,500 referees======")
 set.seed(490)
-selected_players <- df1 %>% 
-  distinct(playerShort) %>% 
-  pull(playerShort) %>% 
-  sample(500)
-selected_referees <- df1 %>% 
-  distinct(refNum) %>% 
-  pull(refNum) %>% 
+selected_players <- df1 %>%
+  distinct(playerShort) %>%
+  pull(playerShort) %>%
   sample(1000)
+selected_referees <- df1 %>%
+  distinct(refNum) %>%
+  pull(refNum) %>%
+  sample(1500)
 df2 <- df1 %>%
   filter(playerShort %in% selected_players, refNum %in% selected_referees)
 write.csv(df2, save_to, row.names = FALSE)
@@ -94,7 +94,7 @@ log_info(
          "    Original data set contained ", 
          format(nrow(soccer), big.mark = ","), " rows.",
          " Removed ", format(nrow(soccer) - nrow(df1), big.mark = ","),
-         " rows with missing data then randomly selected 100 players ", 
-         "resulting in ", format(nrow(df2), big.mark = ","), 
-         " dyads in the final set."))
+         " rows with missing data then randomly selected 1,000 players ", 
+         "and 1,500 referees resulting in ", 
+         format(nrow(df2), big.mark = ","), " dyads in the final set."))
 log_info(paste0("=======Data saved to `", save_to, "`======="))
