@@ -1,22 +1,22 @@
-INFO  [2022-02-16 12:23:37] ===============Data preparation===============
-INFO  [2022-02-16 12:23:37] Reading variables: player, playerShort, birthday, height, weight, position, club, leagueCountry, refNum, goals, victories, defeats, yellowCards, games, redCards, rater1, rater2 from the soccer data set.
-INFO  [2022-02-16 12:23:37] <146028 rows>
-INFO  [2022-02-16 12:23:37] =======Checking for missing values======
-INFO  [2022-02-16 12:23:37] Variables: rater1, rater2, position, weight, height missing values for 21407, 21407, 17726, 2243, 263 rows respectively.
-INFO  [2022-02-16 12:23:37] =======Checking player records for missing information======
-INFO  [2022-02-16 12:23:37] Found 0 records with `rater1` info for players with missing records.
-INFO  [2022-02-16 12:23:37] Removed 21407 rows missing `rater1`.
-INFO  [2022-02-16 12:23:37] <124621 rows>
-INFO  [2022-02-16 12:23:37] Variables: position, weight, height missing values for 8461, 753, 46 rows respectively.
-INFO  [2022-02-16 12:23:37] Found 0 records with `position` info for players with missing records.
-INFO  [2022-02-16 12:23:37] Removed 8461 rows missing `position`.
-INFO  [2022-02-16 12:23:37] <116160 rows>
-INFO  [2022-02-16 12:23:37] Variables: weight, height missing values for 557, 45 rows respectively.
-INFO  [2022-02-16 12:23:37] Found 0 records with `weight` info for players with missing records.
-INFO  [2022-02-16 12:23:37] Removed 557 rows missing `weight`.
-INFO  [2022-02-16 12:23:37] <115603 rows>
-INFO  [2022-02-16 12:23:37] No rows with missing values.
-INFO  [2022-02-16 12:23:37] =======Randomly select 1,000 players and 1,500 referees======
-INFO  [2022-02-16 12:23:37] ===============Data preparation completed===============
-    Original data set contained 146,028 rows. Removed 30,425 rows with missing data then randomly selected 1,000 players and 1,500 referees resulting in 44,571 dyads in the final set.
-INFO  [2022-02-16 12:23:37] =======Data saved to `data/soccer.csv`=======
+INFO  [2022-02-16 13:30:15] ===============Data preparation===============
+INFO  [2022-02-16 13:30:15] Reading variables: player, playerShort, birthday, height, weight, position, club, leagueCountry, refNum, goals, victories, defeats, yellowCards, games, redCards, rater1, rater2 from the soccer data set.
+INFO  [2022-02-16 13:30:16] <146028 rows>
+INFO  [2022-02-16 13:30:16] =======Checking for missing values======
+INFO  [2022-02-16 13:30:16] Variables: rater1, rater2, position, weight, height missing values for 21407, 21407, 17726, 2243, 263 rows respectively.
+INFO  [2022-02-16 13:30:16] =======Checking player records for missing information======
+INFO  [2022-02-16 13:30:16] Found 0 records with `rater1` info for players with missing records.
+INFO  [2022-02-16 13:30:16] Removed 21407 rows missing `rater1`.
+INFO  [2022-02-16 13:30:16] <124621 rows>
+INFO  [2022-02-16 13:30:16] Variables: position, weight, height missing values for 8461, 753, 46 rows respectively.
+INFO  [2022-02-16 13:30:16] Found 0 records with `position` info for players with missing records.
+INFO  [2022-02-16 13:30:16] Removed 8461 rows missing `position`.
+INFO  [2022-02-16 13:30:16] <116160 rows>
+INFO  [2022-02-16 13:30:16] Variables: weight, height missing values for 557, 45 rows respectively.
+INFO  [2022-02-16 13:30:16] Found 0 records with `weight` info for players with missing records.
+INFO  [2022-02-16 13:30:16] Removed 557 rows missing `weight`.
+INFO  [2022-02-16 13:30:16] <115603 rows>
+INFO  [2022-02-16 13:30:16] No rows with missing values.
+INFO  [2022-02-16 13:30:16] =======Randomly select 75 players from England and Germany======
+INFO  [2022-02-16 13:30:16] ===============Data preparation completed===============
+    Original data set contained 146,028 rows. Removed 30,425 rows with missing data then randomly selected 75 players from England and Germany each resulting in 13,529 dyads in the final set.
+INFO  [2022-02-16 13:30:16] =======Data saved to `data/soccer.csv`=======
