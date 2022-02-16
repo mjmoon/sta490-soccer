@@ -76,11 +76,21 @@ while(! is.null(missing)) {
   missing <- res[[1]]
   df1 <- res[[2]]
 }
-write.csv(df1, save_to, row.names = FALSE)
+log_info("=======Randomly select 100 players======")
+set.seed(490)
+selected_players <- df1 %>% 
+  distinct(playerShort) %>% 
+  pull(playerShort) %>% 
+  sample(100)
+df2 <- df1 %>%
+  filter(playerShort %in% selected_players)
+write.csv(df2, save_to, row.names = FALSE)
 log_info(
   paste0("===============Data preparation completed===============\n",
          "    Original data set contained ", 
          format(nrow(soccer), big.mark = ","), " rows.",
          " Removed ", format(nrow(soccer) - nrow(df1), big.mark = ","),
-         " rows; ", format(nrow(df1), big.mark = ","), " rows kept."))
+         " rows with missing data then randomly selected 100 players ", 
+         "resulting in ", format(nrow(df2), big.mark = ","), 
+         " dyads in the final set."))
 log_info(paste0("=======Data saved to `", save_to, "`======="))
