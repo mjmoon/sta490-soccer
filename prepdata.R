@@ -76,14 +76,18 @@ while(! is.null(missing)) {
   missing <- res[[1]]
   df1 <- res[[2]]
 }
-log_info("=======Randomly select 100 players======")
+log_info("=======Randomly select 500 players and 1,000 referees======")
 set.seed(490)
 selected_players <- df1 %>% 
   distinct(playerShort) %>% 
   pull(playerShort) %>% 
-  sample(100)
+  sample(500)
+selected_referees <- df1 %>% 
+  distinct(refNum) %>% 
+  pull(refNum) %>% 
+  sample(1000)
 df2 <- df1 %>%
-  filter(playerShort %in% selected_players)
+  filter(playerShort %in% selected_players, refNum %in% selected_referees)
 write.csv(df2, save_to, row.names = FALSE)
 log_info(
   paste0("===============Data preparation completed===============\n",
