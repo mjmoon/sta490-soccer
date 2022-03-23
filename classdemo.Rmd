@@ -13,6 +13,7 @@ remotes::install_github("mverseanalysis/mverse", ref = "release")
 ## Load and prepare data
 
 ```{r}
+library(tidyverse)
 soccer <- read.csv("data/soccer.csv")
 soccer <- mutate(soccer, skintone = (rater1 + rater2) / 2)
 ```
@@ -24,6 +25,7 @@ soccer <- mutate(soccer, skintone = (rater1 + rater2) / 2)
 ```
 
 ```{r}
+library(mverse)
 # with mverse
 ```
 
