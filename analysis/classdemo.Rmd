@@ -1,0 +1,48 @@
+---
+title: "Multiverse analysis: Code with me"
+output: html_notebook
+---
+
+## Install `mverse`
+
+```{r}
+# installs from github repository's "release" branch
+remotes::install_github("mverseanalysis/mverse", ref = "release")
+```
+
+## Load and prepare data
+
+```{r}
+soccer <- read.csv("data/soccer.csv")
+soccer <- mutate(soccer, skintone = (rater1 + rater2) / 2)
+```
+
+## Options for position
+
+```{r}
+
+```
+
+```{r}
+# with mverse
+```
+
+## Model specification options
+
+```{r}
+
+```
+
+```{r}
+# with mverse
+```
+
+## Fit and results
+
+```{r}
+
+```
+
+```{r}
+# with mverse
+```
